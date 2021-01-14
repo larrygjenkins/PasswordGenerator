@@ -12,8 +12,23 @@ function writePassword() {
 function generatePassword() {
   var pwlength = parseInt(prompt('How many chars?'));
   console.log(typeof pwlength);
+  
+  var lowerCase = confirm("Include lowercase letters? \nSelect OK for Yes and Cancel for No.");
+  console.log("Lowercase = " + lowerCase);
+
+  var upperCase = confirm("Include uppercase letters? \nSelect OK for Yes and Cancel for No.");
+  console.log("Uppercase = " + upperCase);
+
+  var numChar = confirm("Include numerical characters? \nSelect OK for Yes and Cancel for No.");
+  console.log("Numerical characters = " + numChar);
+
+  var specChar = confirm("Include special characters? \nSelect OK for Yes and Cancel for No.");
+  console.log("Special characters = " + specChar);
+
+      
+    }
   console.log();
-}
+
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
