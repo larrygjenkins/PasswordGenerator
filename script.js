@@ -29,8 +29,16 @@ console.log(criteria.lc);
 
 function generatePassword() {
   var pwlength = parseInt(prompt('How many chars?'));
+
+  if (pwlength < 8 || pwlength > 128) {
+    alert("Please enter a number greater than 7 and less than 129.");
+    var pwlength = parseInt(prompt('How many chars?'));
+  }
+
+  else {
   console.log(typeof pwlength);
   console.log("Length = " + pwlength);
+  }
   
   var lowerCase = confirm("Include lowercase letters? \nSelect OK for Yes and Cancel for No.");
   console.log("Lowercase = " + lowerCase);
