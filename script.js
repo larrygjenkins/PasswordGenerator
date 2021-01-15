@@ -9,16 +9,7 @@ function writePassword() {
   passwordText.value = password;
 }
 
-var criteria = {
-  lc: "abcdefghijklmnopqrstuvwxyz",
-  uc: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  num: "0123456789",
-  sc: "~`!#$%^&*+=-[]\\\';,/{}|\":<>? "
-};
-
 var pwdcriteria = "";
-
-console.log(criteria.sc);
 
 function generatePassword() {
   var pwlength = parseInt(prompt('How many chars?'));
