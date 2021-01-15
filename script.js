@@ -14,8 +14,9 @@ var criteria = {
   uc: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   num: "0123456789",
   sc: "~`!#$%^&*+=-[]\\\';,/{}|\":<>? "
-
 };
+
+var pwdcriteria = "";
 
 console.log(criteria.sc);
 
@@ -35,15 +36,34 @@ function generatePassword() {
   var lowerCase = confirm("Include lowercase letters? \nSelect OK for Yes and Cancel for No.");
   console.log("Lowercase = " + lowerCase);
 
+  if (lowerCase === true) {
+    pwdcriteria = pwdcriteria + "abcdefghijklmnopqrstuvwxyz";
+    console.log(pwdcriteria);
+  }
+
   var upperCase = confirm("Include uppercase letters? \nSelect OK for Yes and Cancel for No.");
   console.log("Uppercase = " + upperCase);
+
+  if (upperCase === true) {
+    pwdcriteria = pwdcriteria + "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    console.log(pwdcriteria);
+  } 
 
   var numChar = confirm("Include numerical characters? \nSelect OK for Yes and Cancel for No.");
   console.log("Numerical characters = " + numChar);
 
+  if (numChar === true) {
+    pwdcriteria = pwdcriteria + "0123456789";
+    console.log(pwdcriteria);
+  }
+
   var specChar = confirm("Include special characters? \nSelect OK for Yes and Cancel for No.");
   console.log("Special characters = " + specChar);
 
+  if (specChar === true) {
+    pwdcriteria = pwdcriteria + "~`!#$%^&*+=-[]\\\';,/{}|\":<>? ";
+    console.log(pwdcriteria);
+  }
       
     }
   console.log();
