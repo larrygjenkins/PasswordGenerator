@@ -78,6 +78,7 @@ Use the following link to access the company's refactored website: [Horiseon Hom
 Following is an image of the password generator before a new password is created:
 
 ![Horiseon Homepage](images/PasswordGeneratorBeforeImage.png)
+<img src="images/PasswordGeneratorBeforeImage.png" alt="Password Generator site before new password created">
 
 Following is an image of the password generator after a new password is created:
 
