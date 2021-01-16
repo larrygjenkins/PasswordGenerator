@@ -9,8 +9,6 @@ function writePassword() {
   passwordText.value = password;
 }
 
-var pwdcriteria = "";
-
 function generatePassword() {
   var pwdcriteria = "";
   var password = "";
