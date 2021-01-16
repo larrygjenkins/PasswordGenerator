@@ -15,6 +15,7 @@ function generatePassword() {
 
   var pwlength = parseInt(prompt('How many chars?'));
 
+  // This validates the length of the password is between 8 and 128 characters and directs user to try again if it is not.
   if (pwlength < 8 || pwlength > 128) {
     alert("Please enter a number greater than 7 and less than 129.");
     var pwlength = parseInt(prompt('How many chars?'));
@@ -25,6 +26,7 @@ function generatePassword() {
   console.log("Length = " + pwlength);
   }
   
+  // This prompts user to indicate if password should include lowercase letters. If so, all lowercase letters are added to the pwdcriteria variable.
   var lowerCase = confirm("Include lowercase letters? \nSelect OK for Yes or Cancel for No.");
   console.log("Lowercase = " + lowerCase);
 
@@ -33,6 +35,7 @@ function generatePassword() {
     console.log(pwdcriteria);
   }
 
+    // This prompts user to indicate if password should include uppercase letters. If so, all uppercase letters are added to the pwdcriteria variable.
   var upperCase = confirm("Include uppercase letters? \nSelect OK for Yes or Cancel for No.");
   console.log("Uppercase = " + upperCase);
 
@@ -41,6 +44,7 @@ function generatePassword() {
     console.log(pwdcriteria);
   } 
 
+    // This prompts user to indicate if password should include numbers (0-9). If so, all numbers are added to the pwdcriteria variable.
   var numChar = confirm("Include numerical characters? \nSelect OK for Yes or Cancel for No.");
   console.log("Numerical characters = " + numChar);
 
@@ -49,6 +53,7 @@ function generatePassword() {
     console.log(pwdcriteria);
   }
 
+    // This prompts user to indicate if password should include special characters. If so, all special characters are added to the pwdcriteria variable.
   var specChar = confirm("Include special characters? \nSelect OK for Yes or Cancel for No.");
   console.log("Special characters = " + specChar);
 
@@ -66,12 +71,9 @@ function generatePassword() {
   }
    
   console.log(password);
-  // } 
-  
+  return password;  
 
     }
-  console.log("Password = ");
-
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
