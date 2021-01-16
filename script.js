@@ -59,20 +59,13 @@ function generatePassword() {
     console.log(pwdcriteria);
   }
   
+  // This loop generates a set of random numbers equal to the password length. Each number is used as a index to choose a password character from the pwdcriteria String.
   for (var i = 0; i < pwlength; i++) {
-    var max = pwdcriteria.length;
-    var min = pwlength;
-    var char = (Math.floor(Math.random() * (max - min + 1) + min));
+    var max = (pwdcriteria.length);
+    var min = 0;
+    var char = (Math.floor(Math.random() * (max - min)) + min);
     password = password + pwdcriteria[char];
-    // console.log(char);
-    // console.log(password);
   }
-
-  // for (var i = 0; i = pwlength; i++) { 
-  //   var char = Math.floor(Math.random() 
-  //             * pwlength + 1); 
-    
-    //  password = pwdcriteria[1];
    
   console.log(password);
   // } 
