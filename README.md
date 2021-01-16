@@ -58,4 +58,4 @@ Following is an image of the password generator before a new password is created
 
 Following is an image of the password generator after a new password is created:
 
-![Password Generator application after new password created](images/PasswordGeneratorAfterImage.png)
+![Password Generator application after new password created](PasswordGeneratorAfterImage.png)
