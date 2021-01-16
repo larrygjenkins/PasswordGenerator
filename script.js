@@ -12,6 +12,9 @@ function writePassword() {
 var pwdcriteria = "";
 
 function generatePassword() {
+  var pwdcriteria = "";
+  var password = "";
+
   var pwlength = parseInt(prompt('How many chars?'));
 
   if (pwlength < 8 || pwlength > 128) {
@@ -24,7 +27,7 @@ function generatePassword() {
   console.log("Length = " + pwlength);
   }
   
-  var lowerCase = confirm("Include lowercase letters? \nSelect OK for Yes and Cancel for No.");
+  var lowerCase = confirm("Include lowercase letters? \nSelect OK for Yes or Cancel for No.");
   console.log("Lowercase = " + lowerCase);
 
   if (lowerCase === true) {
@@ -32,7 +35,7 @@ function generatePassword() {
     console.log(pwdcriteria);
   }
 
-  var upperCase = confirm("Include uppercase letters? \nSelect OK for Yes and Cancel for No.");
+  var upperCase = confirm("Include uppercase letters? \nSelect OK for Yes or Cancel for No.");
   console.log("Uppercase = " + upperCase);
 
   if (upperCase === true) {
@@ -40,7 +43,7 @@ function generatePassword() {
     console.log(pwdcriteria);
   } 
 
-  var numChar = confirm("Include numerical characters? \nSelect OK for Yes and Cancel for No.");
+  var numChar = confirm("Include numerical characters? \nSelect OK for Yes or Cancel for No.");
   console.log("Numerical characters = " + numChar);
 
   if (numChar === true) {
@@ -48,16 +51,35 @@ function generatePassword() {
     console.log(pwdcriteria);
   }
 
-  var specChar = confirm("Include special characters? \nSelect OK for Yes and Cancel for No.");
+  var specChar = confirm("Include special characters? \nSelect OK for Yes or Cancel for No.");
   console.log("Special characters = " + specChar);
 
   if (specChar === true) {
     pwdcriteria = pwdcriteria + "~`!#$%^&*+=-[]\\\';,/{}|\":<>? ";
     console.log(pwdcriteria);
   }
-      
+  
+  for (var i = 0; i < pwlength; i++) {
+    var max = pwdcriteria.length;
+    var min = pwlength;
+    var char = (Math.floor(Math.random() * (max - min + 1) + min));
+    password = password + pwdcriteria[char];
+    // console.log(char);
+    // console.log(password);
+  }
+
+  // for (var i = 0; i = pwlength; i++) { 
+  //   var char = Math.floor(Math.random() 
+  //             * pwlength + 1); 
+    
+    //  password = pwdcriteria[1];
+   
+  console.log(password);
+  // } 
+  
+
     }
-  console.log();
+  console.log("Password = ");
 
 
 // Add event listener to generate button
