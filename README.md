@@ -1,6 +1,6 @@
 # Password Generator
 ## Description
-Horiseon, a marketing agency, wants a codebase that follows accessibility standards so their website is optimized for search engines. They have requested we refactor their code to ensure accessibility and clarify and simply their existing code base. 
+The goal of this project was to create a random password generator. The length and format of the password would be dependent upon user input. 
 
 ## Problems
 1. The client's codebase does not use semantic HTML elements, so the organization of the site is not immediatley apparent when reviewing its index.html file. 
@@ -37,49 +37,17 @@ Horiseon, a marketing agency, wants a codebase that follows accessibility standa
 
 2. The style.css file was reorganized so the elements presented there follow the same organizational flow of the index.html file. 
 
-3. Whenever possible, element selectors within the style.css file were consolidated to produce a more concise stylesheet.
-
-**Example of CSS element selectors before code refactor:** 
-
-    .search-engine-optimization h2 {
-        margin-bottom: 20px;
-        font-size: 36px;
-    }
-
-    .online-reputation-management h2 {
-        margin-bottom: 20px;
-        font-size: 36px;
-    }
-
-    .social-media-marketing h2 {
-        margin-bottom: 20px;
-        font-size: 36px;
-    }
-
-**Example of consolidated CSS element selector after code refactor:**
-
-    .content h2 {
-        margin-bottom: 20px;
-        font-size: 36px;
-    }
-
-4. Alt text was added for each image referenced within the index.html file. 
-
-5. The non-functioning navigation link was repaired by adding an ID to the article it referenced. 
-
-6. A page title, listing the Horiseon Homepage, was added to the index.html file. 
-
-7. Comments were added to both the index.html and style.css files to help future developers better understand the structure of the files and how the elements referenced within each are used.
-
 ## Location
-Use the following link to access the company's refactored website: [Horiseon Homepage](https://larrygjenkins.github.io/HoriseonRefactor/)
+Use the following link to access the repository associated with this project: [Password Generator Repository](https://github.com/larrygjenkins/PasswordGenerator.git)
+
+Use the following link to access the Password Generator application: [Password Generator Application](https://larrygjenkins.github.io/PasswordGenerator/)
 
 ## Example Images
 Following is an image of the password generator before a new password is created:
 
-![Horiseon Homepage](images/PasswordGeneratorBeforeImage.png)
-<img src="images/PasswordGeneratorBeforeImage.png" alt="Password Generator site before new password created">
+![Password Generator application before new password created](images/PasswordGeneratorBeforeImage.png)
+<img src="images/PasswordGeneratorBeforeImage.png" alt="Password Generator application before new password created">
 
 Following is an image of the password generator after a new password is created:
 
-![Horiseon Homepage](images/PasswordGeneratorAfterImage.png)
+![Password Generator application after new password created](images/PasswordGeneratorAfterImage.png)
