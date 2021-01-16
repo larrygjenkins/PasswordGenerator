@@ -1,4 +1,4 @@
-# PasswordGenerator
+# Password Generator
 ## Description
 Horiseon, a marketing agency, wants a codebase that follows accessibility standards so their website is optimized for search engines. They have requested we refactor their code to ensure accessibility and clarify and simply their existing code base. 
 
@@ -77,8 +77,8 @@ Use the following link to access the company's refactored website: [Horiseon Hom
 ## Example Images
 Following is an image of the password generator before a new password is created:
 
-![Horiseon Homepage](./images/PasswordGeneratorBeforeImage.png)
+![Horiseon Homepage](images/PasswordGeneratorBeforeImage.png)
 
 Following is an image of the password generator after a new password is created:
 
-![Horiseon Homepage](./images/PasswordGeneratorAfterImage.png)
+![Horiseon Homepage](images/PasswordGeneratorAfterImage.png)
