@@ -53,8 +53,8 @@ Use the following link to access the Password Generator application: [Password G
 ## Example Images
 Following is an image of the password generator before a new password is created:
 
-![Password Generator application before new password created](./images/PasswordGeneratorBeforeImage.png)
-<img src="./images/PasswordGeneratorBeforeImage.png" alt="Password Generator application before new password created"/>
+![Password Generator application before new password created](./images/PasswordGeneratorBeforeImage.PNG)
+<img src="./images/PasswordGeneratorBeforeImage.PNG" alt="Password Generator application before new password created"/>
 
 Following is an image of the password generator after a new password is created:
 
