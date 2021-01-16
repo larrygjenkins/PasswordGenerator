@@ -12,7 +12,13 @@ The index.html and style.css files were provided for this project. A portion of 
 5. Once all selections have been made, the application displays the user's new password. 
 
 ## Solution
-1. Non-semantic elements, like div tags, within the index.html and style.css files were replaced with more descriptive elements, like main, aside, section, and article. This allows future developers to more quickly discern the organization of a page from the HTML syntax. 
+An event listener was created for the application's "Generator Password" button that iniates the functions associated with this page. 
+
+The initial prompt asks the user to choose a password length. If the user chooses a number that does not fall within the range of 8-128, they are prompted to enter a new length. 
+
+Subsequent prompts ask the user to confirm whether their password should include lowercase letters, uppercase letters, numbers, and special characters. A JavaScript variable was created for password criteria. Initially, this variable contains an empty string, but as the user confirms criteria, characters are added to the string. 
+
+Once 
 
 **Example of HTML tags before code refactor:** 
 
