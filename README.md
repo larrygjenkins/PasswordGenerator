@@ -1,13 +1,15 @@
 # Password Generator
 ## Description
-The goal of this project was to create a random password generator. The length and format of the password would be dependent upon user input. 
+The goal of this project was to create a random password generator. The length and format of the password would be dependent upon user input.
 
-## Problems
-1. The client's codebase does not use semantic HTML elements, so the organization of the site is not immediatley apparent when reviewing its index.html file. 
-2. The elements represented in the corresponding stylesheet do not progress in the same order as they are presented in the index.html file. 
-3. Images within the index.html file do not include alt text attributes.
-4. One link within the existing site is not active.
-5. The site lacks a descriptive title.
+The index.html and style.css files were provided for this project. A portion of starter code for the script.jss file was also provided. 
+
+## Acceptance Criteria
+1. Users have a button that intitates the creation of a new, random password.
+2. The application will prompt the user for the necessary length of their password.
+3. Password must be between 8 and 128 characters. 
+4. Users may choose an option of password characteristics, including lowercase letters, uppercase letters, numbers, and special characters.
+5. Once all selections have been made, the application displays the user's new password. 
 
 ## Solution
 1. Non-semantic elements, like div tags, within the index.html and style.css files were replaced with more descriptive elements, like main, aside, section, and article. This allows future developers to more quickly discern the organization of a page from the HTML syntax. 
