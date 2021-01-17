@@ -29,19 +29,7 @@ Once the string is complete, a for loop is used to generate a set of random numb
     password = password + pwdcriteria[char];
   }
 
-**Example of HTML tags after code refactor:** 
-
-
-        <section class="content">
-            <article id="search-engine-optimization" class="search-engine-optimization">
-                <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="A photo of a laptop, a cup of coffee, colored pencils, and a notebook with SEO ideas." />
-                <h2>Search Engine Optimization</h2>
-                <p>
-                    The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-                </p>
-            </article>
-
-2. The style.css file was reorganized so the elements presented there follow the same organizational flow of the index.html file. 
+When the password is complete, it is passed to the designated text area (using the element's ID) within the index.html file. Some additional text was included in this area to indicate the collection of characters is the user's new password. 
 
 ## Location
 Use the following link to access the repository associated with this project: [Password Generator Repository](https://github.com/larrygjenkins/PasswordGenerator.git)
