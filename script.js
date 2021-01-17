@@ -13,13 +13,14 @@ function generatePassword() {
   var pwdcriteria = "";
   var password = "";
 
-  var pwlength = parseInt(prompt('How many chars?'));
+  var pwlength = parseInt(prompt('How many characters should your password contain?'));
 
-  // This validates the length of the password is between 8 and 128 characters and directs user to try again if it is not.
-  if (pwlength < 8 || pwlength > 128) {
-    alert("Please enter a number greater than 7 and less than 129.");
-    var pwlength = parseInt(prompt('How many chars?'));
-  }
+  
+// This validates the length of the password is between 8 and 128 characters and directs user to try again if it is not.
+ if (pwlength < 8 || pwlength > 128) {
+   alert("Please enter a number greater than 7 and less than 129.");
+ var pwlength = parseInt(prompt('How many chars?'));
+}
 
   else {
   console.log(typeof pwlength);
@@ -73,7 +74,8 @@ function generatePassword() {
   console.log(password);
   return password;  
 
-    }
+}
+
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
