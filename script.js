@@ -15,17 +15,21 @@ function generatePassword() {
 
   var pwlength = parseInt(prompt('How many characters should your password contain?'));
 
+  while (isNaN(pwlength) || (pwlength < 8 || pwlength > 128)) {
+    alert("Please enter a valid number greater than 7 and less than 129.");
+    pwlength = parseInt(prompt('How many characters should your password contain?'));
+  }
   
 // This validates the length of the password is between 8 and 128 characters and directs user to try again if it is not.
- if (pwlength < 8 || pwlength > 128) {
-   alert("Please enter a number greater than 7 and less than 129.");
- var pwlength = parseInt(prompt('How many chars?'));
-}
+//  while (pwlength < 8 || pwlength > 128) {
+//    alert("Please enter a number greater than 7 and less than 129.");
+//     pwlength = parseInt(prompt('How many chars?'));
+// }
 
-  else {
-  console.log(typeof pwlength);
-  console.log("Length = " + pwlength);
-  }
+  // else {
+  // console.log(typeof pwlength);
+  // console.log("Length = " + pwlength);
+  // }
   
   // This prompts user to indicate if password should include lowercase letters. If so, all lowercase letters are added to the pwdcriteria variable.
   var lowerCase = confirm("Include lowercase letters? \nSelect OK for Yes or Cancel for No.");
